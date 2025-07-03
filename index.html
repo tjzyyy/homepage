@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Homepage</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      background: #121212;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Vertically & horizontally center */
+      padding: 40px 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 20px;
+      font-family: 'Courier New', monospace;
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+    .search-box {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 40px;
+    }
+    input[type='text'] {
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .tiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .tile {
+      background: #1f1f1f;
+      border-radius: 12px;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .tile:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
+    .tile img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+    }
+    .tile span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello Terence.</h1>
+  <div class="search-box">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="Search Google..." />
+    </form>
+  </div>
+  <div class="tiles">
+    <a class="tile" href="https://insilicoterminal.com/#/trade" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=insilicoterminal.com" alt="Terminal" />
+      <span>Terminal</span>
+    </a>
+    <a class="tile" href="https://app.breakoutprop.com/" target="_blank">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADfklEQVRYR8VXW0gUURg+Z/ZMaujmhS4WKYGWD0VBBokFWUgXX8LAUOuhCCKwoCDfKouCIose7Cl68EElLaQIhXqwniwvXRAqhEpQApXcXCrTGef0/XuR3WlmnTGX/eHD48x/+f7LOWeWswQLt4m/FM+nABlvfnYEniHwZ+AiMB5PEnYEehB0G/Ae2A1MxIvEfAQobgNwOpEEKPsc4Fc8SDipgIbAG4HBRBHQEXgz8CGCgIL1WmA1IAAf8AX47ZakkwqECXyC80LgJHAAWGUKRtu2G2gEHjol45TAITg8ApQDHgdZfoTOWYC2c8yzxAkBijcNJDkIHKkyg3/oHLkJGHa2TgmY7aktXwE6rIjcGmADkGZSpOxrgfrFIkCZdALXgX6A+k5CQ5kLHAfOAN6IgERwP9BlRcJNBShrKuktgMprJ0V40RaqSljnHRb0/I/ZyA2B2zA+D9j2M8J5MdY0gHSpkZBNBfBooQSGYEhngT9G5uZXRJh2QljasaBdFCVOK3AZVnUugpMqDeUAoIbsvoWe/Yz0Y0fgBpTyQoo0ydeAty4JkO97QEbIjvpPFRlzQsBlrIWrW1YgvUXbZRgsCS9ng65F/2Q1p/PelWQ0azsMyZIDRpwZaUJ0j1Tw8NYNPbZw6W3WeqWUdO4HRFGUE5OV4r6b6OntMt2Y0ofhJzUYn/tSUkTBaDmfvwXeJq1HMklfREGWnD8Hgb346/gb0duiH0XwRiZloMog0HuuSmyv4zxqG1u2wEwA5hocHPRXiw4nVcjskF7th/Ya11DBXBIKv+CvVK+a7R0SCOQwsoSL0u9VnK5lW8nrkEljPq0RpTocUcFJwcWmiUo+/B8EAr0YVTivycv3PO4v5PSlNCcoN/c+YPnc0BuwLo18h9Zd8lepV6xYW1egWXsKJ2WWaWIOMAl9uH6egMyAYchpzmQu4u+BfhlmJ3z8hgfoZVa22DdUwv+5B4KzYSHLmmZOGZzfDQ+Qk75bZsd5X0qyKDNPflR1rAyXt8rUaV3vCmxFznVFsjvo6TFkl+WIDGxQlTYm1Bp/BY/5m8LuKGYZrTJH13VsI1asqmKLrjFNcq0Wu6EcxDJt2jMD/VcgXb8129P5ooTTFR5TbAmQFU30uE/fKVXxhjKhQVvRxlZqs7NFhjSyo4aQKVMq8/SsW88GzQMai0FMAvOxX4z3CSfwFyT/JzDM/vsUAAAAAElFTkSuQmCC" alt="Breakout" />
+      <span>Breakout<br />Terminal</span>
+    </a>
+    <a class="tile" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" />
+      <span>Gmail</span>
+    </a>
+    <a class="tile" href="https://www.doctorofcredit.com/" target="_blank">
+      <img src="https://www.doctorofcredit.com/favicon.ico" alt="DOC" />
+      <span>DOC</span>
+    </a>
+    <a class="tile" href="https://www.coinglass.com/pro/futures/LiquidationHeatMap" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=coinglass.com" alt="Liquidity" />
+      <span>Liquidity</span>
+    </a>
+    <a class="tile" href="https://coinalyze.net/bitcoin/usd/bybit/btcusd/price-chart-live/" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=coinalyze.net" alt="OF" />
+      <span>OF</span>
+    </a>
+    <a class="tile" href="https://x.com/home" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=x.com" alt="Twitter" />
+      <span>Twitter</span>
+    </a>
+    <a class="tile" href="https://chatgpt.com/" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=chatgpt.com" alt="ChatGPT" />
+      <span>ChatGPT</span>
+    </a>
+    <a class="tile" href="https://www.oltpro.com/main/pro/default.php" target="_blank">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=oltpro.com" alt="OLT" />
+      <span>OLT</span>
+    </a>
+  </div>
+</body>
+</html>
